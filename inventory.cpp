@@ -10,9 +10,8 @@ using namespace std;
 
 const string DATA_FILE = "inventory.csv";
 
-// ─────────────────────────────────────────────
 //  Product Structure
-// ─────────────────────────────────────────────
+
 struct Product {
     int    id;
     string name;
@@ -21,9 +20,9 @@ struct Product {
     double value() const { return price * quantity; }
 };
 
-// ─────────────────────────────────────────────
+
 //  Inventory Manager Class
-// ─────────────────────────────────────────────
+
 class InventoryManager {
     vector<Product> products;
     int nextId = 1;
@@ -266,9 +265,7 @@ public:
     }
 };
 
-// ─────────────────────────────────────────────
 //  Main – Menu Loop
-// ─────────────────────────────────────────────
 int main() {
     InventoryManager mgr;
 
